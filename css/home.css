@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500&display=swap');
 :root {
   --clr-dark: #424b54;
   --fw-thin: 100;
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
-  --rgb-random: rgba(65, 62, 62, 0.911);
+  --rgb-random: rgba(65, 62, 62, 0.747);
 }
 * {
   list-style: none;
   text-decoration: none;
 }
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
 
 /*Mobile start*/
 .banner-img {
-  background-image: url("/img/home-banner-image.jpg");
+  background-image: url('/img/home-banner-image.jpg');
   width: 100%;
   height: 800px;
   background-position: center;
@@ -32,7 +32,6 @@ body {
   display: grid;
   text-align: center;
   position: relative;
-  background-color: var(-rgb-random);
   width: 100%;
   z-index: 999;
 }
@@ -45,8 +44,9 @@ body {
   position: absolute;
   top: 100%;
   left: 0%;
-  background: var(--rgb-random);
+  background: var(--clr-dark);
   width: 100%;
+  border-radius: 10px;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
@@ -60,11 +60,9 @@ body {
   margin-left: 0.3em;
   margin-top: 1em;
   position: relative;
-  /*Remove display:none at det end*/
-  display: none;
 }
 .all-item-li a::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -30%;
@@ -109,22 +107,51 @@ body {
 }
 /*Navigation bar End*/
 
-/*Header Text start*/
 .text-header {
-  display: grid;
+  background: var(--rgb-random);
   color: #fff;
-  font-size: 28px;
-  grid-template-columns: 1fr 1fr;
-  font-weight: var(--fw-thin);
+  margin-left: 1rem;
+  margin-right: 1em;
+  padding: 5px 10px 20px 5px;
+  width: 35rem;
+  border-radius: 5px;
 }
-
-.br-text {
+.main-text {
+  font-size: 46px;
+  max-width: 70%;
   font-weight: var(--fw-medium);
-  font-size: 24px;
+  margin-left: 30px;
 }
+.under-text {
+  font-weight: var(--fw-regular);
+  width: 50%;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.book-btn {
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  width: 225px;
+  text-align: center;
+}
+.br-text {
+  text-align: center;
+  margin: 20px;
+  border: solid var(--clr-dark) 1px;
+  border-radius: 5px;
+}
+/*Mobile end*/
 
 /* margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft);*/
 
+/*Desktop start*/
 @media screen and (min-width: 767px) {
   /*Navigation bar start*/
   .nav-toggle-label {
@@ -132,7 +159,7 @@ body {
   }
   .all-nav-bar {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 2fr);
+    grid-template-columns: 1fr auto minmax(600px, 3fr);
   }
   .home-logo {
     grid-column: 2 / 3;
@@ -158,4 +185,8 @@ body {
     opacity: 1;
   }
   /*Navigation bar End*/
+  .under-text {
+    width: 90%;
+  }
 }
+/*Desktop End*/
