@@ -36,7 +36,8 @@ body {
   z-index: 999;
 }
 .home-logo {
-  margin: 0;
+  margin-top: 20px;
+  height: 60%;
   cursor: pointer;
   justify-content: center;
 }
@@ -93,7 +94,7 @@ body {
   position: absolute;
   font-size: 26px;
   right: 5%;
-  height: 100%;
+  height: 80%;
   display: flex;
   align-items: center;
   color: #fff;
@@ -109,25 +110,13 @@ body {
 
 .text-header {
   background: var(--rgb-random);
-  color: #fff;
-  margin-left: 1rem;
-  margin-right: 1em;
-  padding: 5px 10px 20px 5px;
-  width: 35rem;
-  border-radius: 5px;
+  width: 390px;
 }
 .main-text {
-  font-size: 46px;
-  max-width: 70%;
-  font-weight: var(--fw-medium);
-  margin-left: 30px;
+  border: solid 1px red;
 }
 .under-text {
-  font-weight: var(--fw-regular);
-  width: 50%;
-  padding: 20px;
-  font-size: 20px;
-  margin-left: 20px;
+  border: solid 1px red;
 }
 .book-btn {
   color: #fff;
