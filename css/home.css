@@ -110,13 +110,23 @@ body {
 
 .text-header {
   background: var(--rgb-random);
-  width: 390px;
+  width: 300px;
 }
 .main-text {
   border: solid 1px red;
+  color: #fff;
+  width: 300px;
+  font-weight: var(--fw-regular);
+  margin-left: 20px;
+  margin: 0;
 }
 .under-text {
   border: solid 1px red;
+  color: #fff;
+  width: 300px;
+  font-weight: var(--fw-regular);
+  margin-left: 20px;
+  margin: 0;
 }
 .book-btn {
   color: #fff;
@@ -127,7 +137,7 @@ body {
   margin-left: 40px;
   font-weight: var(--fw-regular);
   font-size: 16px;
-  width: 225px;
+  width: 180px;
   text-align: center;
 }
 .br-text {
