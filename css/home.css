@@ -108,38 +108,39 @@ body {
 }
 /*Navigation bar End*/
 
+/*Header texts Start*/
 .text-header {
   background: var(--rgb-random);
-  width: 300px;
+  border-radius: 3px;
+  max-width: 300px;
+  height: 480px;
+  margin-left: 10px;
+  align-items: center;
+  display: grid;
 }
 .main-text {
-  border: solid 1px red;
   color: #fff;
-  width: 300px;
-  font-weight: var(--fw-regular);
-  margin-left: 20px;
   margin: 0;
+  width: 80%;
+  margin-left: 25px;
 }
 .under-text {
-  border: solid 1px red;
   color: #fff;
-  width: 300px;
-  font-weight: var(--fw-regular);
-  margin-left: 20px;
   margin: 0;
+  max-width: 80%;
+  margin-left: 25px;
 }
 .book-btn {
-  color: #fff;
   border: solid 1px #fff;
-  border-radius: 5px;
-  padding: 10px 10px 10px 10px;
-  margin-top: 40px;
-  margin-left: 40px;
-  font-weight: var(--fw-regular);
-  font-size: 16px;
-  width: 180px;
+  border-radius: 3px;
   text-align: center;
+  width: 180px;
+  margin-left: 25px;
 }
+.btn-text {
+  color: #fff;
+}
+
 .br-text {
   text-align: center;
   margin: 20px;
@@ -184,8 +185,15 @@ body {
     opacity: 1;
   }
   /*Navigation bar End*/
-  .under-text {
-    width: 90%;
+  .text-header {
+    max-width: 360px;
   }
 }
+
+@media screen and (min-width: 300px) {
+  .text-header {
+    max-width: 360px;
+  }
+}
+
 /*Desktop End*/
