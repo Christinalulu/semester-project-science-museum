@@ -7,7 +7,11 @@
   --fw-medium: 500;
   --rgb-background: rgba(65, 62, 62, 0.514);
   --effect-color: #4396a8de;
+  --effect-box: rgba(122, 120, 120, 0.925);
 }
+
+/*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
+
 * {
   list-style: none;
   text-decoration: none;
@@ -18,13 +22,15 @@ body {
   margin: 0;
   padding: 0;
 }
-/*Mobile start*/
+
+/*   Mobile start   */
 .banner-img {
   background: url('/img/home-banner-image.jpg') no-repeat center / cover;
   max-width: 100%;
   min-height: 800px;
 }
-/*Navigation bar start*/
+
+/*   Navigation bar start   */
 .all-nav-bar {
   display: grid;
   text-align: center;
@@ -147,7 +153,7 @@ body {
   margin-top: 20px;
 }
 .book-btn:hover {
-  background-color: var(--effect-color);
+  background-color: var(--effect-box);
 }
 /*Header texts End*/
 .br-text {
@@ -161,60 +167,81 @@ h2 {
   font-weight: var(--fw-medium);
 }
 
-/*Kids start*/
+/*    Kids start   */
 .explore-together {
+  border: solid 1px red;
+  display: flex;
+  position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.kid-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.left-img-kid {
-  width: 100%;
-  min-height: 360px;
-  background: url('/img/for-kids.jpg') no-repeat center / cover;
-  border-radius: 4px;
-}
-.right-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px #424b54;
-  border-radius: 4px;
-}
-.text-content {
-  align-items: center;
-  justify-content: center;
-  margin: 25px;
-}
-.text-content h3 {
-  font-weight: var(--fw-regular);
-  font-size: 25px;
-}
-.text-content p {
-  font-size: 15px;
-  font-weight: 300;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.btn-info {
-  background-color: #424b54;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 12px;
+.explore-together .cards-content {
+  border: solid 2px var(--clr-dark);
+  border-radius: 3px;
+  position: relative;
+  max-width: 420px;
+  height: 400px;
+  margin: 40px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+}
+
+.explore-together .cards-content:hover {
+  height: 640px;
+}
+.explore-together .cards-content .img-box {
+  position: relative;
+  width: 420px;
+  height: 280px;
+  top: -60px;
+  z-index: 1;
+}
+
+.explore-together .cards-content .img-box img {
+  max-width: 100%;
   border-radius: 3px;
 }
 
-/*Kids  End*/
+.explore-together .cards-content .text-content {
+  position: relative;
+  margin-top: 140px;
+  padding: 40px 15px;
+  text-align: start;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
 
-/*Teacher start*/
+.explore-together .cards-content:hover .text-content {
+  visibility: visible;
+  margin-top: -40px;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.text-content h3 {
+  font-weight: var(--fw-regular);
+  font-size: 24px;
+}
+.text-content p {
+  font-weight: var(--fw-light);
+}
+/*
+*/
+.btn-expo {
+  margin: 5px;
+  background-color: var(--clr-dark);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 3px;
+}
 
-/* margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft);*/
-
-/*Desktop*/
+/*     Desktop      */
 @media screen and (min-width: 498px) {
   .main-text {
     font-size: 50px;
@@ -227,7 +254,12 @@ h2 {
   .br-text {
     margin-top: 20px;
   }
+  .left-img-teachers {
+    width: 100%;
+    min-height: 360px;
+  }
 }
+
 @media screen and (min-width: 767px) {
   .nav-toggle-label {
     display: none;
@@ -273,17 +305,5 @@ h2 {
   }
   .br-text {
     margin-top: 20px;
-  }
-  .kid-container {
-    flex-direction: row;
-  }
-  .left-img-kid {
-    min-height: 590px;
-  }
-  .kid-container {
-    max-width: 90%;
-  }
-  .right-text-container {
-    max-width: 35%;
   }
 }
