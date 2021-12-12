@@ -22,15 +22,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/*   Mobile start   */
+/*    Header    */
 .banner-img {
   background: url('/img/home-banner-image.jpg') no-repeat center / cover;
   max-width: 100%;
   min-height: 800px;
 }
-
-/*   Navigation bar start   */
 .all-nav-bar {
   display: grid;
   text-align: center;
@@ -99,6 +96,7 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
+  cursor: pointer;
 }
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
@@ -107,9 +105,6 @@ body {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-/*Navigation bar End*/
-
-/*Header texts Start*/
 .text-header {
   background: var(--rgb-background);
   border-radius: 3px;
@@ -155,7 +150,6 @@ body {
 .book-btn:hover {
   background-color: var(--effect-box);
 }
-/*Header texts End*/
 .br-text {
   text-align: center;
   margin: 20px;
@@ -166,81 +160,100 @@ h2 {
   font-size: 20px;
   font-weight: var(--fw-medium);
 }
-
-/*    Kids start   */
+/*    Card    */
 .explore-together {
-  border: solid 1px red;
   display: flex;
-  position: relative;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  padding: 0;
+  align-items: center;
+  justify-self: center;
+  max-width: 1500px;
+  margin-top: 50px;
 }
-
-.explore-together .cards-content {
+.cards-content {
   border: solid 2px var(--clr-dark);
   border-radius: 3px;
   position: relative;
-  max-width: 420px;
-  height: 400px;
-  margin: 40px 10px;
-  padding: 20px 15px;
+  max-width: 320px;
+  height: 360px;
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.cards-content:hover {
+  height: 580px;
 }
 
-.explore-together .cards-content:hover {
-  height: 640px;
-}
-.explore-together .cards-content .img-box {
+.img-box {
   position: relative;
-  width: 420px;
-  height: 280px;
-  top: -60px;
+  max-width: 320px;
+  height: 290px;
+  top: -40px;
   z-index: 1;
 }
-
-.explore-together .cards-content .img-box img {
+.img-box img {
   max-width: 100%;
   border-radius: 3px;
 }
-
-.explore-together .cards-content .text-content {
+.text-content {
   position: relative;
-  margin-top: 140px;
-  padding: 40px 15px;
+  margin-top: 0px;
+  padding: 5px 10px;
   text-align: start;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.explore-together .cards-content:hover .text-content {
   visibility: visible;
-  margin-top: -40px;
-  opacity: 1;
-  transition-delay: 0.3s;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
 }
 .text-content h3 {
   font-weight: var(--fw-regular);
-  font-size: 24px;
 }
 .text-content p {
   font-weight: var(--fw-light);
+  font-size: 15px;
 }
-/*
-*/
+.text-content:hover {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -80px;
+}
 .btn-expo {
-  margin: 5px;
   background-color: var(--clr-dark);
+  border-radius: 2px;
   padding: 10px 20px;
   color: #fff;
+  margin-top: 10px;
+}
+/*    Icon Card    */
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* border: solid 1px red; */
+.icon-content {
+  text-align: center;
+  border: solid 2px var(--clr-dark);
+  margin: 20px;
+  width: 260px;
+  border-radius: 3px;
+  padding: 20px;
+}
+.icon-content h4 {
+  font-size: 20px;
+}
+.go-here-btn {
+  font-weight: var(--fw-light);
+  border: 2px solid var(--clr-dark);
+  padding: 6px 40px;
+  color: #424b54;
+  font-size: 18px;
   border-radius: 3px;
 }
-
+.img-icon img {
+  width: 220px;
+}
 /*     Desktop      */
 @media screen and (min-width: 498px) {
   .main-text {
@@ -254,9 +267,18 @@ h2 {
   .br-text {
     margin-top: 20px;
   }
-  .left-img-teachers {
-    width: 100%;
-    min-height: 360px;
+  .cards-content {
+    max-width: 420px;
+    margin: 30px 35px;
+  }
+  .cards-content:hover {
+    height: 600px;
+  }
+  .img-box {
+    max-width: 420px;
+  }
+  .text-content:hover {
+    margin-top: -10px;
   }
 }
 
@@ -291,7 +313,6 @@ h2 {
   .container-nav a {
     opacity: 1;
   }
-  /*Navigation bar End*/
   .text-header {
     max-width: 980px;
   }
@@ -305,5 +326,9 @@ h2 {
   }
   .br-text {
     margin-top: 20px;
+  }
+  .features {
+    display: flex;
+    flex-direction: row;
   }
 }
