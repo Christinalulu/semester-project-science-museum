@@ -163,65 +163,51 @@ h2 {
 /*    Card    */
 .explore-together {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-self: center;
-  max-width: 1500px;
-  margin-top: 50px;
+  width: 100%;
 }
 .cards-content {
-  border: solid 2px var(--clr-dark);
-  border-radius: 3px;
-  position: relative;
-  max-width: 320px;
-  height: 360px;
-  margin: 30px 0;
-  display: flex;
-  flex-direction: column;
-  transition: 0.4s ease-in-out;
-}
-.cards-content:hover {
-  height: 580px;
-}
-
-.img-box {
-  position: relative;
-  max-width: 320px;
-  height: 290px;
-  top: -40px;
-  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .img-box img {
-  max-width: 100%;
+  width: 320px;
   border-radius: 3px;
 }
 .text-content {
-  position: relative;
-  margin-top: 0px;
-  padding: 5px 10px;
-  text-align: start;
-  visibility: visible;
-  opacity: 0;
-  transition: 0.4s ease-in-out;
+  border: solid 2px var(--clr-dark);
+  border-radius: 3px;
+  max-width: 85%;
+  padding: 0 10px;
+  margin: 1px 0 0 12px;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+}
+.text-content .text-content .text-content {
+  height: 330px;
 }
 .text-content h3 {
   font-weight: var(--fw-regular);
+  font-size: 18px;
 }
 .text-content p {
   font-weight: var(--fw-light);
   font-size: 15px;
 }
-.text-content:hover {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -80px;
-}
+
 .btn-expo {
-  background-color: var(--clr-dark);
-  border-radius: 2px;
-  padding: 10px 20px;
+  background-color: #424b54;
+  padding: 5px 10px;
+  margin-top: 0;
   color: #fff;
-  margin-top: 10px;
+  border-radius: 3px;
+  width: 120px;
+  font-size: 12px;
+  text-align: center;
 }
 /*    Icon Card    */
 .features {
@@ -266,19 +252,6 @@ h2 {
   }
   .br-text {
     margin-top: 20px;
-  }
-  .cards-content {
-    max-width: 420px;
-    margin: 30px 35px;
-  }
-  .cards-content:hover {
-    height: 600px;
-  }
-  .img-box {
-    max-width: 420px;
-  }
-  .text-content:hover {
-    margin-top: -10px;
   }
 }
 
@@ -326,6 +299,10 @@ h2 {
   }
   .br-text {
     margin-top: 20px;
+  }
+  .explore-together {
+    display: flex;
+    flex-direction: row;
   }
   .features {
     display: flex;
