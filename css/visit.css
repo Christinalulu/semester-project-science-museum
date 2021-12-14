@@ -302,7 +302,7 @@ h2 {
 /*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
 
 .u-universal-box {
-  width: 95%;
+  max-width: 95%;
   height: auto;
   margin-top: 20px;
   margin-left: 5px;
@@ -335,6 +335,7 @@ h2 {
 .admin {
   width: 95%;
   height: 520px;
+  margin-left: 10px;
   border: 2px solid var(--clr-dark);
   text-align: center;
 }
@@ -360,6 +361,59 @@ h2 {
   background-color: var(--clr-dark);
 }
 
+.shop-food-box {
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.food-txt {
+  border: 2px solid var(--clr-dark);
+  border-radius: 3px;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.food-txt h6 {
+  font-weight: var(--fw-regular);
+  text-align: center;
+  font-size: 20px;
+}
+.food-txt p {
+  max-width: 80%;
+  font-weight: var(--fw-light);
+  margin-left: 30px;
+}
+.food-img {
+  height: 460px;
+  width: 315px;
+  background: url('/img/cafe.jpg') no-repeat center / cover;
+  margin-bottom: 20px;
+}
+.shop-txt {
+  border: 2px solid var(--clr-dark);
+  border-radius: 3px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.shop-txt h6 {
+  font-weight: var(--fw-regular);
+  font-size: 20px;
+  text-align: center;
+}
+.shop-txt p {
+  font-weight: var(--fw-light);
+  max-width: 70%;
+  margin-left: 50px;
+}
+.shop-img {
+  height: 460px;
+  width: 315px;
+  background: url('/img/shop.jpg') no-repeat center / cover;
+}
 /* Don`t delete */
 footer {
   background-color: var(--clr-dark);
