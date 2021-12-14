@@ -362,13 +362,7 @@ h2 {
 }
 
 .shop-food-box {
-  max-width: 100%;
-  height: auto;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 .food-txt {
   border: 2px solid var(--clr-dark);
@@ -605,5 +599,14 @@ footer {
   }
   .fa-ticket-alt {
     margin: 0;
+  }
+  .food-txt {
+    max-width: 30%;
+  }
+  .shop-txt {
+    max-width: 30%;
+  }
+  .shop-food-box {
+    display: inline-flex;
   }
 }
