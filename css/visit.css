@@ -8,9 +8,8 @@
   --rgb-background: rgba(65, 62, 62, 0.514);
   --effect-color: #4396a8de;
   --effect-box: rgba(122, 120, 120, 0.925);
+  --icon-clr: #ff8c1a;
 }
-
-/*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
 
 * {
   list-style: none;
@@ -112,7 +111,7 @@ body {
   background: var(--rgb-background);
   border-radius: 3px;
   height: 500px;
-  margin: 2%;
+  margin-top: 100px;
   padding: 0;
   max-width: 730px;
   display: flex;
@@ -164,6 +163,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.icon-visit {
+  margin-top: 0;
+}
 .email {
   width: 190px;
   text-align: center;
@@ -175,14 +177,10 @@ body {
 }
 
 .btn-email {
-  margin-top: 20px;
-  background-color: var(--clr-dark);
-  padding: 0.5px 30px;
-  width: 90px;
-  text-align: center;
+  padding: 5px 20px;
+  background-color: #424b54;
+  border-radius: 2px;
   color: #fff;
-  border-radius: 3px;
-  margin-left: 80px;
 }
 .br-text {
   text-align: center;
@@ -196,6 +194,171 @@ h2 {
 }
 
 /* Delete down here*/
+.time-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time-date-content {
+  border: 2px solid var(--clr-dark);
+  width: 300px;
+  margin: 20px;
+}
+.header-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.items {
+  display: flex;
+}
+.date {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--clr-dark);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.fa-calendar-alt {
+  color: #ff8c1a;
+  margin-bottom: 65px;
+}
+.btn-event {
+  background-color: var(--clr-dark);
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.contact-box {
+  width: 95%;
+  border-radius: 5px;
+  height: 760px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: var(--clr-dark);
+  text-align: center;
+}
+.contact-map {
+  max-width: 100%;
+  height: auto;
+  flex: 50%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact-form {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+.contact-form h5 {
+  font-size: 26px;
+  font-weight: var(--fw-regular);
+  color: #fff;
+}
+.txt-name {
+  width: 70%;
+  height: 40px;
+  border: 2px solid var(--clr-dark);
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: none;
+}
+.txt-email {
+  width: 70%;
+  height: 40px;
+  border: 2px solid var(--clr-dark);
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: none;
+}
+.txt-mes {
+  width: 70%;
+  height: 100px;
+  border: 2px solid var(--clr-dark);
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: none;
+}
+.btn-sub {
+  outline: none;
+  width: 30%;
+  border: none;
+  background-color: var(--effect-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
+
+.u-universal-box {
+  width: 95%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.access {
+  width: 95%;
+  height: 460px;
+  border: 2px solid var(--clr-dark);
+  text-align: center;
+  margin: 0 0 10px 10px;
+}
+.access h6 {
+  font-size: 20px;
+  font-weight: var(--fw-regular);
+}
+.access p {
+  font-size: 14px;
+  font-weight: var(--fw-light);
+}
+
+.fa-accessible-icon {
+  color: var(--icon-clr);
+  margin: 35px;
+}
+.admin {
+  width: 95%;
+  height: 520px;
+  border: 2px solid var(--clr-dark);
+  text-align: center;
+}
+.admin h6 {
+  font-size: 20px;
+  font-weight: var(--fw-regular);
+}
+.admin p {
+  font-size: 14px;
+  font-weight: var(--fw-light);
+  max-width: 80%;
+  margin-left: 25px;
+}
+.fa-ticket-alt {
+  color: var(--icon-clr);
+  margin: 30px;
+}
+.btn-access {
+  margin: 20px 60px;
+  padding: 5px 5px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: var(--clr-dark);
+}
 
 /* Don`t delete */
 footer {
@@ -252,14 +415,26 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .btn-email {
-    margin-left: 170px;
-  }
   .small-text {
     max-width: 60%;
     margin-left: 100px;
   }
-  /* Delete down here*/
+  .btn-email-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .access p {
+    max-width: 70%;
+    margin-left: 60px;
+  }
+  .admin p {
+    margin-left: 50px;
+  }
+  .btn-access {
+    width: 40%;
+    margin-left: 120px;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -310,15 +485,71 @@ footer {
   }
   .banner-img {
     max-width: 75%;
+    background-position: right;
   }
   .aside-info {
+    height: 800px;
   }
-  .btn-email {
-    margin-left: 180px;
-  }
+
   .small-text {
-    max-width: 60%;
+    max-width: 70%;
+    margin-left: 75px;
+  }
+  .icon-visit {
+    margin-top: 120px;
+  }
+  .time-date {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-box {
+    flex-direction: row;
+    height: auto;
+  }
+  .txt-name {
+    width: 40%;
+  }
+  .txt-email {
+    width: 40%;
+    margin: 20px 70px;
+  }
+  .txt-mes {
+    width: 40%;
+    margin: 10px 110px;
+  }
+  .u-universal-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .admin {
+    width: 460px;
+    height: 460px;
+  }
+  .access {
+    width: 460px;
+    height: 460px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .access p {
+    max-width: 70%;
+    margin-left: 60px;
+  }
+  .admin p {
+    margin-left: 50px;
+  }
+  .btn-access {
+    width: 40%;
     margin-left: 100px;
   }
-  /* Delete down here*/
+  .fa-accessible-icon {
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  .fa-ticket-alt {
+    margin: 0;
+  }
 }
