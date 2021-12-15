@@ -114,10 +114,12 @@ body {
 }
 .txt-inner-header h1 {
   font-weight: var(--fw-regular);
+  margin-left: 30px;
 }
 .txt-inner-header p {
   font-weight: var(--fw-light);
   padding: 30px;
+  margin: 50px 0;
 }
 .btn-text {
   padding: 10px 10px;
