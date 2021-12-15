@@ -10,9 +10,7 @@
   --effect-box: rgba(122, 120, 120, 0.925);
   --icon-clr: #ff8c1a;
 }
-
-/*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
-
+/*     margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft);    */
 * {
   list-style: none;
   text-decoration: none;
@@ -23,10 +21,10 @@ body {
   margin: 0;
   padding: 0;
 }
-/*    Header    */
 
+/*     Mobile M 375  start   */
 .banner-img {
-  background: url('/img/exhibtion.jpg') no-repeat center / cover;
+  background: url('/img/exhibition.jpg') no-repeat center / cover;
   max-width: 100%;
   min-height: 800px;
 }
@@ -118,8 +116,8 @@ body {
 }
 .txt-inner-header p {
   font-weight: var(--fw-light);
-  padding: 30px;
-  margin: 50px 0;
+  padding: 40px;
+  margin: 20px 0;
 }
 .btn-text {
   padding: 10px 10px;
@@ -135,7 +133,7 @@ body {
   transition: ease-in-out 0.3s;
   font-size: 1em;
   margin-left: 50px;
-  margin-top: 35px;
+  margin-top: 55px;
 }
 .book-btn:hover {
   background-color: var(--effect-box);
@@ -161,7 +159,7 @@ h2 {
 }
 .exb-img-one {
   background: url('/img/exhibition-one.jpg') no-repeat right / cover;
-  width: 320px;
+  min-width: 100%;
   height: 460px;
 }
 .exb-txt-one {
@@ -191,7 +189,7 @@ h2 {
 }
 .exb-img-two {
   background: url('/img/exhibition-two.jpg') no-repeat center / cover;
-  width: 320px;
+  min-width: 100%;
   height: 460px;
 }
 .exb-txt-two {
@@ -232,7 +230,7 @@ h2 {
 }
 .exb-img-three {
   background: url('/img/exhibition-three.jpg') no-repeat center / cover;
-  width: 320px;
+  min-width: 100%;
   height: 460px;
 }
 .exb-txt-three {
@@ -262,7 +260,7 @@ h2 {
 }
 .exb-img-four {
   background: url('/img/exhibition-four.jpg') no-repeat center / cover;
-  width: 320px;
+  min-width: 100%;
   height: 460px;
 }
 .exb-txt-four {
@@ -292,7 +290,7 @@ h2 {
 }
 .exb-img-five {
   background: url('/img/exhibition-five.jpg') no-repeat center / cover;
-  width: 320px;
+  min-width: 100%;
   height: 460px;
 }
 .exb-txt-five {
@@ -354,7 +352,7 @@ footer {
   height: 2px;
 }
 
-/*     Desktop      */
+/*     Small window Desktop 500px     */
 @media screen and (min-width: 498px) {
   .main-text {
     font-size: 50px;
@@ -367,10 +365,12 @@ footer {
   /* Delete down here*/
 }
 
+/*     Tablet 768px    */
 @media screen and (min-width: 767px) {
   .nav-toggle-label {
     display: none;
   }
+
   .all-nav-bar {
     display: grid;
     grid-template-columns: 1fr auto min-max(600px, 3fr);
@@ -435,4 +435,8 @@ footer {
   .exb-txt-five {
     width: 70%;
   }
+}
+
+/* Big Desktop 1530px*/
+@media screen and (min-width: 1520px) {
 }
