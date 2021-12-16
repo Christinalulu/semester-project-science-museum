@@ -10,9 +10,7 @@
   --effect-box: rgba(122, 120, 120, 0.925);
   --icon-clr: #ff8c1a;
 }
-
 /*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
-
 * {
   list-style: none;
   text-decoration: none;
@@ -20,11 +18,10 @@
 }
 body {
   font-family: 'Kanit', sans-serif;
-
   margin: 0;
   padding: 0;
 }
-/*    Header    */
+/*     Mobile M 375  start   */
 .banner-img {
   background: url('/img/home-banner-image.jpg') no-repeat center / cover;
   max-width: 100%;
@@ -107,32 +104,27 @@ body {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-.text-header {
+.txt-content {
   background: var(--rgb-background);
-  border-radius: 3px;
-  height: 500px;
-  margin: 2%;
-  padding: 0;
-  max-width: 730px;
   display: flex;
   flex-direction: column;
-}
-.main-text {
-  font-size: 2em;
+  min-width: 90%;
   color: #fff;
-  margin-top: 20px;
-  width: 80%;
-  margin-left: 25px;
+  margin: 5px;
+}
+.txt-content h1 {
   font-weight: var(--fw-regular);
+  font-size: 40px;
+  padding: 10px;
+  margin: 15px;
 }
-.under-text {
-  color: #fff;
-  max-width: 80%;
-  margin-top: 5px;
-  margin-left: 25px;
+.txt-content p {
   font-weight: var(--fw-light);
-  font-size: 1em;
+  max-width: 90%;
+  padding: 40px;
+  margin-left: 30px;
 }
+
 .btn-text {
   padding: 10px 10px;
   color: #fff;
@@ -146,8 +138,8 @@ body {
   border-radius: 3px;
   transition: ease-in-out 0.3s;
   font-size: 1em;
-  margin-left: 25px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 80px;
 }
 .book-btn:hover {
   background-color: var(--effect-box);
@@ -262,7 +254,7 @@ h2 {
   align-items: center;
   width: 100%;
 }
-/* border: solid 1px red; */
+
 .icon-content {
   text-align: center;
   border: solid 2px var(--clr-dark);
@@ -329,7 +321,7 @@ footer {
   height: 2px;
 }
 
-/*     Desktop      */
+/*     Small window Desktop 500px     */
 @media screen and (min-width: 498px) {
   .main-text {
     font-size: 50px;
@@ -367,6 +359,7 @@ footer {
   }
 }
 
+/*     Tablet 768px    */
 @media screen and (min-width: 767px) {
   .nav-toggle-label {
     display: none;
@@ -446,4 +439,8 @@ footer {
     margin-left: 40px;
     margin-right: 0px;
   }
+}
+
+/* Big Desktop 1530px*/
+@media screen and (min-width: 1520px) {
 }
