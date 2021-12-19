@@ -110,7 +110,6 @@ body {
 }
 .txt-inner-header h1 {
   font-weight: var(--fw-regular);
-  margin-left: 30px;
 }
 .txt-inner-header p {
   font-weight: var(--fw-light);
@@ -404,6 +403,9 @@ footer {
   .txt-inner-header p {
     max-width: 70%;
   }
+  .txt-inner-header h1 {
+    margin-left: 30px;
+  }
   .book-btn {
     margin-top: 50px;
   }
@@ -442,7 +444,7 @@ footer {
   }
   /*     four     */
   .exb-container-four {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   .exb-img-four {
     min-width: 50%;

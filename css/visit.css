@@ -10,7 +10,6 @@
   --effect-box: rgba(122, 120, 120, 0.925);
   --icon-clr: #ff8c1a;
 }
-
 * {
   list-style: none;
   text-decoration: none;
@@ -21,8 +20,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/*    Header   */
 .banner-img {
   background: url('/img/visit.jpg') no-repeat center / cover;
   max-width: 100%;
@@ -175,7 +172,6 @@ body {
   margin-left: 10px;
   font-weight: var(--fw-light);
 }
-
 .btn-email {
   padding: 5px 20px;
   background-color: #424b54;
@@ -192,8 +188,6 @@ h2 {
   font-size: 20px;
   font-weight: var(--fw-medium);
 }
-
-/* Delete down here*/
 .time-date {
   display: flex;
   flex-direction: column;
@@ -234,7 +228,6 @@ h2 {
   border-radius: 3px;
   color: #fff;
 }
-
 .contact-box {
   width: 95%;
   border-radius: 5px;
@@ -298,9 +291,6 @@ h2 {
   border-radius: 5px;
   color: #fff;
 }
-
-/*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
-
 .u-universal-box {
   max-width: 95%;
   height: auto;
@@ -327,7 +317,6 @@ h2 {
   font-size: 14px;
   font-weight: var(--fw-light);
 }
-
 .fa-accessible-icon {
   color: var(--icon-clr);
   margin: 35px;
@@ -349,18 +338,24 @@ h2 {
   max-width: 80%;
   margin-left: 25px;
 }
-.fa-ticket-alt {
-  color: var(--icon-clr);
-  margin: 30px;
-}
-.btn-access {
-  margin: 20px 60px;
+.btn-admin {
+  margin: 0 60px;
   padding: 5px 5px;
   color: #fff;
   border-radius: 3px;
   background-color: var(--clr-dark);
 }
-
+.fa-ticket-alt {
+  color: var(--icon-clr);
+  margin: 30px;
+}
+.btn-access {
+  margin: 0 60px;
+  padding: 5px 5px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: var(--clr-dark);
+}
 .shop-food-box {
   display: block;
 }
@@ -383,9 +378,10 @@ h2 {
 }
 .food-img {
   height: 460px;
-  width: 315px;
+  max-width: 90%;
   background: url('/img/cafe.jpg') no-repeat center / cover;
   margin-bottom: 20px;
+  margin: auto;
 }
 .shop-txt {
   border: 2px solid var(--clr-dark);
@@ -405,10 +401,10 @@ h2 {
 }
 .shop-img {
   height: 460px;
-  width: 315px;
+  max-width: 90%;
+  margin: auto;
   background: url('/img/shop.jpg') no-repeat center / cover;
 }
-/* Don`t delete */
 footer {
   background-color: var(--clr-dark);
   display: flex;
@@ -448,8 +444,6 @@ footer {
   width: 100%;
   height: 2px;
 }
-
-/*     Desktop      */
 @media screen and (min-width: 498px) {
   .main-text {
     font-size: 50px;
@@ -480,11 +474,17 @@ footer {
     margin-left: 50px;
   }
   .btn-access {
-    width: 40%;
-    margin-left: 120px;
+    width: 35%;
+    margin-left: 145px;
+  }
+  .btn-admin {
+    width: 35%;
+    margin-left: 145px;
+  }
+  .fa-ticket-alt {
+    margin-bottom: 20px;
   }
 }
-
 @media screen and (min-width: 767px) {
   .nav-toggle-label {
     display: none;
@@ -492,6 +492,7 @@ footer {
   .all-nav-bar {
     display: grid;
     grid-template-columns: 1fr auto min-max(600px, 3fr);
+    background-color: #424b54;
   }
   .home-logo {
     grid-column: 2 / 3;
@@ -538,7 +539,6 @@ footer {
   .aside-info {
     height: 800px;
   }
-
   .small-text {
     max-width: 70%;
     margin-left: 75px;
@@ -550,7 +550,6 @@ footer {
     display: flex;
     flex-direction: row;
   }
-
   .contact-box {
     flex-direction: row;
     height: auto;
@@ -591,7 +590,11 @@ footer {
   }
   .btn-access {
     width: 40%;
-    margin-left: 100px;
+   margin: auto;
+  }
+  .btn-admin {
+    width: 40%;
+   margin: auto;
   }
   .fa-accessible-icon {
     margin-bottom: 20px;
@@ -608,5 +611,22 @@ footer {
   }
   .shop-food-box {
     display: inline-flex;
+  }
+  .fa-ticket-alt {
+    margin-bottom: 50px;
+  }.shop-img{
+  width: 40%;
+  }
+  .food-img{
+    width: 40%;
+  }
+}
+/*  Desktop 1024px*/
+@media screen and (min-width: 1023px){
+  .shop-img{
+  width: 40%;
+  }
+  .food-img{
+    width: 40%;
   }
 }
