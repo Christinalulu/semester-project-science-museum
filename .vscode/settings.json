@@ -1,5 +1,11 @@
 {
     "cSpell.words": [
         "Emailadress"
-    ]
+    ],
+    "cSpell.ignoreWords": [
+        "exhibiton",
+        "exhibtion",
+        "respnse"
+    ],
+    "liveServer.settings.port": 5501
 }
