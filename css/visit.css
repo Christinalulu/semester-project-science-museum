@@ -621,7 +621,6 @@ footer {
     width: 40%;
   }
 }
-/*  Desktop 1024px*/
 @media screen and (min-width: 1023px){
   .shop-img{
   width: 40%;

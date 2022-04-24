@@ -10,9 +10,6 @@
   --effect-box: rgba(122, 120, 120, 0.925);
   --icon-clr: #ff8c1a;
 }
-
-/*  margin: (10pxTOP) (20px Right) (25pxBottom) (10pxLeft); */
-
 * {
   list-style: none;
   text-decoration: none;
@@ -24,7 +21,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/*    Header    */
 .banner-img {
   background: url('/img/event.jpg') no-repeat center/ cover;
   max-width: 100%;
@@ -163,7 +159,6 @@ h2 {
   font-size: 20px;
   font-weight: var(--fw-medium);
 }
-/* one */
 .event-container-one {
   width: 100%;
   display: flex;
@@ -196,8 +191,6 @@ h2 {
   font-size: 14px;
   color: #fff;
 }
-
-/* two */
 .event-container-two {
   width: 100%;
   display: flex;
@@ -230,7 +223,6 @@ h2 {
   font-size: 14px;
   color: #fff;
 }
-/* three */
 .event-container-three {
   width: 100%;
   display: flex;
@@ -264,7 +256,6 @@ h2 {
   font-size: 14px;
   color: #fff;
 }
-
 .event-kid {
   display: flex;
   flex-direction: column;
@@ -294,10 +285,6 @@ h2 {
   font-weight: var(--fw-light);
   font-size: 15px;
 }
-
-/*
-Don`t delete
-*/
 footer {
   background-color: var(--clr-dark);
   display: flex;
@@ -337,8 +324,6 @@ footer {
   width: 100%;
   height: 2px;
 }
-
-/*     Desktop      */
 @media screen and (min-width: 498px) {
   .main-text {
     font-size: 50px;
@@ -351,8 +336,6 @@ footer {
   .br-text {
     margin-top: 20px;
   }
-  /* Container start here */
-
   .event-img-box-one {
     width: 460px;
   }
@@ -385,7 +368,6 @@ footer {
     width: 70%;
   }
 }
-
 @media screen and (min-width: 767px) {
   .banner-img {
     background-position-x: 0;
@@ -431,11 +413,9 @@ footer {
     margin-top: 10px;
     font-size: 1.5em;
   }
-
   .br-text {
     margin-top: 20px;
   }
-  /* Container start here */
   .event-container-one {
     flex-direction: row;
     margin: auto;
@@ -452,7 +432,6 @@ footer {
     margin: 0;
     margin-left: -120px;
   }
-
   .event-container-two {
     flex-direction: row-reverse;
     margin: auto;
@@ -469,7 +448,6 @@ footer {
     margin: 0;
     margin-right: -120px;
   }
-
   .event-container-three {
     flex-direction: row;
     margin: auto;

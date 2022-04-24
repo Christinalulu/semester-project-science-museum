@@ -20,7 +20,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/*     Mobile M 375  start   */
 .banner-img {
   background: url('/img/exhibition.jpg') no-repeat center / cover;
   max-width: 100%;
@@ -209,7 +208,6 @@ footer {
   width: 100%;
   height: 2px;
 }
-/*     Small window Desktop 500px     */
 @media screen and (min-width: 498px) {
   .txt-inner-header h1 {
     font-size: 50px;
@@ -223,7 +221,6 @@ footer {
     margin-top: 32px;
   }
 }
-/*     Tablet 768px    */
 @media screen and (min-width: 767px) {
   .nav-toggle-label {
     display: none;
@@ -255,7 +252,6 @@ footer {
   .container-nav a {
     opacity: 1;
   }
-  /*     Text header     */
   .txt-inner-header p {
     max-width: 70%;
   }
@@ -291,7 +287,6 @@ footer {
       justify-content: center;
   }
 }
-/* Big Desktop 1530px*/
 @media screen and (min-width: 1520px) {
   .txt-inner-header p {
     max-width: 40%;
